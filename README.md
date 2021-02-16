@@ -6,7 +6,7 @@
 
 > Just a baby name inspiration tool
 
-https://schascha.github.io/balue/
+https://schascha.github.io/balu/
 
 ## Project setup
 
