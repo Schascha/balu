@@ -4,67 +4,67 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/balu/css/app.63f29c5e.css"
   },
   {
-    "revision": "77ab798fee6094c7efd3326d822368c2",
+    "revision": "5afafa06d51681ebd31c5bed8b6d7686",
     "url": "/balu/favicon.ico"
   },
   {
-    "revision": "5724ce949042ff377515b9047229bf0f",
+    "revision": "d6add8c6c28d4e39fdcf9dd1295fbf33",
     "url": "/balu/img/icons/android-chrome-192x192.png"
   },
   {
-    "revision": "5e2d615a5ea74c00d11afe439f1756a6",
+    "revision": "f325493909ef7b7143bd70fa2ee7d439",
     "url": "/balu/img/icons/android-chrome-512x512.png"
   },
   {
-    "revision": "5724ce949042ff377515b9047229bf0f",
+    "revision": "d6add8c6c28d4e39fdcf9dd1295fbf33",
     "url": "/balu/img/icons/android-chrome-maskable-192x192.png"
   },
   {
-    "revision": "5e2d615a5ea74c00d11afe439f1756a6",
+    "revision": "f325493909ef7b7143bd70fa2ee7d439",
     "url": "/balu/img/icons/android-chrome-maskable-512x512.png"
   },
   {
-    "revision": "4d180508d826fbc1b090ca8bbabdf2db",
+    "revision": "e814d1ea0442786c5c4ff3c3228e8e8a",
     "url": "/balu/img/icons/apple-touch-icon-120x120.png"
   },
   {
-    "revision": "136d6e41047ae58d5dc7b90dba56bdb0",
+    "revision": "35a9515883de454436ef69712c64b677",
     "url": "/balu/img/icons/apple-touch-icon-152x152.png"
   },
   {
-    "revision": "b31f26ad60a7524bd015efe4cf14cef2",
+    "revision": "4d2c60748465403c2275e64fe8b85a5a",
     "url": "/balu/img/icons/apple-touch-icon-180x180.png"
   },
   {
-    "revision": "c38783775553481949fff4a86049c257",
+    "revision": "0db5f1eca35eabf57d959f85ff6ad9d4",
     "url": "/balu/img/icons/apple-touch-icon-60x60.png"
   },
   {
-    "revision": "47b751990cf14bf065b5e44d5856cbbb",
+    "revision": "de8c13501e85dfce54e62b9ca3386f87",
     "url": "/balu/img/icons/apple-touch-icon-76x76.png"
   },
   {
-    "revision": "b31f26ad60a7524bd015efe4cf14cef2",
+    "revision": "4d2c60748465403c2275e64fe8b85a5a",
     "url": "/balu/img/icons/apple-touch-icon.png"
   },
   {
-    "revision": "9462f78b4d111c8e8c9bb900cafa638b",
+    "revision": "ea43145cd36541f418201d8a1afbfd7c",
     "url": "/balu/img/icons/favicon-16x16.png"
   },
   {
-    "revision": "ebbc6e1339bb3825b290ff2745bd3c3d",
+    "revision": "657bc9995764427df0249d3e69c8e5b5",
     "url": "/balu/img/icons/favicon-32x32.png"
   },
   {
-    "revision": "b28113c1ee217c1ec5b8ac1971d59ffd",
+    "revision": "ca9ecfe6b4f680ebd1720774b25c59ec",
     "url": "/balu/img/icons/msapplication-icon-144x144.png"
   },
   {
-    "revision": "e362be63ccc7963a0e68ff7b2456ffcd",
+    "revision": "a78a02ba88becc28acd460ea480174be",
     "url": "/balu/img/icons/mstile-150x150.png"
   },
   {
-    "revision": "aa43dcfbc790c013dd1613ce0e2bb220",
+    "revision": "5d12b131a729b5d85b5c769811d6c4ca",
     "url": "/balu/img/icons/safari-pinned-tab.svg"
   },
   {
