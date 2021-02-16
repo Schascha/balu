@@ -1,0 +1,110 @@
+.child {
+	&-name {
+		font-size: 3rem;
+		font-weight: 400;
+
+		&::after {
+			font-size: 0.5em;
+			vertical-align: middle;
+		}
+
+		&.both::after {
+			content: '⚥';
+		}
+
+		&.boy::after {
+			content: '♂';
+		}
+
+		&.girl::after {
+			content: '♀';
+		}
+
+		@each $name in ('boy', 'girl') {
+			&.#{$name} {
+				color: var(--color-#{$name}-dark);
+			}
+		}
+	}
+
+	&-bg {
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+
+		&::before,
+		&::after {
+			animation: 60s linear infinite;
+			transition: all 0.4s ease-out;
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: 400px;
+			height: 400px;
+		}
+
+		&::before {
+			animation-name: boy;
+			transform: translate(-150px, -150px);
+			top: 0;
+			left: 0;
+			background-color: var(--color-boy);
+			border-radius: 30% 70% 75% 25% / 30% 30% 70% 70%;
+		}
+
+		&::after {
+			animation-name: girl;
+			transform: translate(150px, 150px);
+			right: 0;
+			bottom: 0;
+			background-color: var(--color-girl);
+			border-radius: 75% 25% 75% 25% / 40% 65% 40% 60%;
+		}
+	}
+
+	@each $name in ('boy', 'girl') {
+		&.#{$name} &-bg {
+			&::#{if($name == 'boy', 'before', 'after')} {
+				animation: none;
+				width: 100%;
+				height: 100%;
+			}
+
+			&::#{if($name == 'girl', 'before', 'after')} {
+				z-index: -2;
+			}
+		}
+	}
+}
+
+@keyframes boy {
+	from {
+		transform: translate(-150px, -150px) rotate(0);
+	}
+
+	50% {
+		transform: translate(-150px, -150px) rotate(180deg) scale(1.1);
+	}
+
+	to {
+		transform: translate(-150px, -150px) rotate(360deg);
+	}
+}
+
+@keyframes girl {
+	from {
+		transform: translate(150px, 150px) rotate(0);
+	}
+
+	50% {
+		transform: translate(150px, 150px) rotate(-180deg) scale(1.1);
+	}
+
+	to {
+		transform: translate(150px, 150px) rotate(-360deg);
+	}
+}

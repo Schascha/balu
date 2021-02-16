@@ -1,0 +1,18 @@
+{
+  "button": {
+    "new": "Neuer Name"
+  },
+  "description": "Finde den perfekten Vornamen für Dein Baby",
+  "field": {
+    "language": {
+      "label": "Sprache"
+    }
+  },
+  "link": {
+    "github": {
+      "href": "https://github.com/Schascha/balu",
+      "title": "Mehr auf GitHub"
+    }
+  },
+  "title": "Balu"
+}

@@ -1,0 +1,70 @@
+.field-switch {
+	display: inline-flex;
+	position: relative;
+	margin: 1rem auto;
+	width: $field-switch-width;
+	height: $field-switch-height;
+	border: 2px solid var(--color-brand);
+	border-radius: $field-switch-height;
+
+	.toggle {
+		transition: all 0.3s ease-out;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: $field-switch-size;
+		height: $field-switch-size;
+		background: var(--color-brand);
+		border-radius: 50%;
+		color: var(--color-base);
+
+		&::before {
+			content: '⚥';
+		}
+	}
+
+	.start:checked {
+		~ .toggle {
+			transform: translate(($field-switch-height - $field-switch-size) / 2, -50%);
+			left: 0;
+			// background-color: var(--color-boy);
+			// color: var(--color-boy-dark);
+
+			&::before {
+				content: '♂';
+			}
+		}
+	}
+
+	.end:checked {
+		~ .toggle {
+			transform: translate(-$field-switch-height + (($field-switch-height - $field-switch-size) / 2), -50%);
+			left: 100%;
+			// background-color: var(--color-girl);
+			// color: var(--color-girl-dark);
+
+			&::before {
+				content: '♀';
+			}
+		}
+	}
+
+	label {
+		cursor: pointer;
+		flex: 1 1 100%;
+		position: relative;
+		z-index: 1;
+	}
+
+	input {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		margin: 0;
+		padding: 0;
+	}
+}

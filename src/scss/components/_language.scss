@@ -1,0 +1,10 @@
+.language {
+	select {
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+
+	label {
+		@include sr-only();
+	}
+}

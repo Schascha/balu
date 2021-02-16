@@ -1,0 +1,18 @@
+{
+  "button": {
+    "new": "New name"
+  },
+  "description": "Find the perfect first name for your baby",
+  "field": {
+    "language": {
+      "label": "Language"
+    }
+  },
+  "link": {
+    "github": {
+      "href": "https://github.com/Schascha/balu",
+      "title": "View on GitHub"
+    }
+  },
+  "title": "Balu"
+}
