@@ -1,13 +1,15 @@
 .DS_Store
 node_modules
+/coverage
 /dist
-
 
 # local env files
 .env.local
 .env.*.local
+*_old.json
 
 # Log files
+debug.log*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
