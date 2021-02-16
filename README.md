@@ -1,4 +1,4 @@
-![Logo](src/assets/logo.svg/?raw=true)
+<img src="src/assets/logo.svg/?raw=true" alt="Logo" width="150">
 
 # Balu
 
