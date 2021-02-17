@@ -4,7 +4,7 @@
   "scripts": {
     "start": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-	"icons": "vue-asset-generate -a ./src/assets/logo.svg --no-manifest",
+    "icons": "vue-asset-generate -a ./src/assets/logo.svg --no-manifest",
     "i18n": "i18next \"./src/**/*.{js,vue}\" --config i18next-parser.config.js && vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
     "test": "vue-cli-service lint && vue-cli-service test:unit --passWithNoTests && stylelint \"./src/**/*.scss\" --syntax scss"
   },
