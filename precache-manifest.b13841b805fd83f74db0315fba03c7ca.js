@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb8668f60d4fd5c4dbbf",
+    "revision": "31db37ae451e0b7d8ef6",
     "url": "/balu/css/app.63f29c5e.css"
   },
   {
@@ -68,12 +68,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/balu/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "227a0835ae6e4e53c99981a2b43bd4bb",
+    "revision": "59b96e5094b4ae969a1dcb4441c87328",
+    "url": "/balu/img/sharing.png"
+  },
+  {
+    "revision": "188eaf10fb7a363dbe908bddda249a63",
     "url": "/balu/index.html"
   },
   {
-    "revision": "cb8668f60d4fd5c4dbbf",
-    "url": "/balu/js/app.8f88175c.js"
+    "revision": "31db37ae451e0b7d8ef6",
+    "url": "/balu/js/app.5bfe29d0.js"
   },
   {
     "revision": "950bf294ad89c3502a30",
