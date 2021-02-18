@@ -16,6 +16,7 @@ module.exports = {
 		loaderOptions: {
 			scss: {
 				additionalData: `
+					@import '@schascha/sassy-mixins';
 					@import '@/scss/variables';
 					@import '@/scss/mixins';
 					`
@@ -25,7 +26,7 @@ module.exports = {
 
 	pluginOptions: {
 		i18n: {
-			locales: ['de'],
+			locales: ['de', 'en'],
 			fallbackLocale: 'de',
 			localeDir: 'locales',
 			enableInSFC: true
