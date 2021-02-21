@@ -1,0 +1,55 @@
+.heart {
+	@include button-reset();
+	padding: 0;
+	border-radius: 0;
+
+	i {
+		display: inline-block;
+		transform: rotate(45deg);
+		position: relative;
+		width: $heart-size;
+		height: $heart-size;
+		background-color: var(--color-brand);
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: inherit;
+			border-radius: 50%;
+		}
+
+		&::before {
+			left: -$heart-size / 2;
+		}
+
+		&::after {
+			top: -$heart-size / 2;
+			left: 0;
+		}
+	}
+
+	span {
+		@include sr-only();
+	}
+
+	&.is-active {
+		animation: pulse 1s ease-out forwards;
+
+		i {
+			background-color: var(--color-heart);
+		}
+	}
+}
+
+@keyframes pulse {
+	25% {
+		transform: scale(1.2);
+	}
+
+	75% {
+		transform: scale(0.95);
+	}
+}

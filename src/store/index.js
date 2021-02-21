@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
 	state: {
 		allNames: [],
-		child: '',
+		child: [],
+		likes: [],
 		memory: [],
 		memoryIndex: 0,
 		names: [],
@@ -41,6 +42,23 @@ export default new Vuex.Store({
 			state.memory.push(child);
 			state.memoryIndex = state.memory.length - 1;
 			state.child = child;
+		},
+		setLike(state) {
+			const
+				{child, likes} = state,
+				index = likes.indexOf(child.name)
+			;
+
+			if (index > -1) {
+				likes.splice(index, 1);
+			} else {
+				likes.push(child.name);
+			}
+
+			window.localStorage.setItem('likes', JSON.stringify(likes));
+		},
+		setLikes(state) {
+			state.likes = window.localStorage.getItem('likes');
 		}
 	},
 	actions: {
@@ -70,6 +88,12 @@ export default new Vuex.Store({
 			if (state.memoryIndex) {
 				commit('setChild', state.memory[--state.memoryIndex]);
 			}
+		},
+		getLikes({commit}) {
+			commit('setLikes');
+		},
+		like({commit}) {
+			commit('setLike');
 		}
 	}
 });

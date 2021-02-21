@@ -10,8 +10,15 @@
 			{{ child.name }}
 		</p>
 
+		<Heart
+			:active="likes && likes.includes(child.name)"
+			@click="onLike"
+		/>
+		<br>
+
 		<FieldSwitch v-model="toggle" />
 		<br>
+
 		<button
 			type="button"
 			@click="onClick"
@@ -23,11 +30,13 @@
 
 <script>
 import FieldSwitch from '@/components/FieldSwitch';
+import Heart from '@/components/Heart';
 
 export default {
 	name: 'ChildName',
 	components: {
-		FieldSwitch
+		FieldSwitch,
+		Heart
 	},
 	data() {
 		return {
@@ -47,7 +56,10 @@ export default {
 
 			this.$store.commit('setGender', gender);
 			return gender;
-		}
+		},
+		likes() {
+			return this.$store.state.likes;
+		},
 	},
 	watch: {
 		child(value) {
@@ -65,6 +77,7 @@ export default {
 	},
 	created() {
 		this.$store.dispatch('getAllNames');
+		this.$store.dispatch('getLikes');
 
 		if (this.$route.params.name) {
 			this.$store.dispatch('getChild', {
@@ -84,6 +97,9 @@ export default {
 	methods: {
 		onClick() {
 			this.$store.dispatch('getChild');
+		},
+		onLike() {
+			this.$store.dispatch('like');
 		},
 		onKeypress(e) {
 			if (e.target.type) {
