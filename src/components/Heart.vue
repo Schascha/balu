@@ -20,7 +20,6 @@ export default {
 	},
 	methods: {
 		onClick() {
-			console.log(this.active);
 			this.$emit('click', !this.active);
 		}
 	}

@@ -58,7 +58,11 @@ export default new Vuex.Store({
 			window.localStorage.setItem('likes', JSON.stringify(likes));
 		},
 		setLikes(state) {
-			state.likes = window.localStorage.getItem('likes');
+			const json = JSON.parse(window.localStorage.getItem('likes'));
+
+			if (Array.isArray(json)) {
+				state.likes = json;
+			}
 		}
 	},
 	actions: {
