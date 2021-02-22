@@ -15,5 +15,8 @@
       "title": "Mehr auf GitHub"
     }
   },
+  "router": {
+    "likes": "Merkzettel"
+  },
   "title": "Balu"
 }

@@ -8,6 +8,8 @@
 
 		<p :class="['child-name', child.gender]">
 			{{ child.name }}
+			<IconBoy v-if="child.gender === 'boy'" />
+			<IconGirl v-if="child.gender === 'girl'" />
 		</p>
 
 		<Heart
@@ -31,12 +33,15 @@
 <script>
 import FieldSwitch from '@/components/FieldSwitch';
 import Heart from '@/components/Heart';
+import IconBoy from '@/assets/icons/boy.svg?inline';
+import IconGirl from '@/assets/icons/girl.svg?inline';
 
 export default {
-	name: 'ChildName',
 	components: {
 		FieldSwitch,
-		Heart
+		Heart,
+		IconBoy,
+		IconGirl,
 	},
 	data() {
 		return {
@@ -76,18 +81,9 @@ export default {
 		}
 	},
 	created() {
-		this.$store.dispatch('getAllNames');
-		this.$store.dispatch('getLikes');
-
-		if (this.$route.params.name) {
-			this.$store.dispatch('getChild', {
-				name: this.$route.params.name
-			});
-		}
-
-		if (!this.child) {
-			this.$store.dispatch('getChild');
-		}
+		this.$store.dispatch('getChild', this.$route.params.name && {
+			name: this.$route.params.name
+		});
 
 		document.addEventListener('keydown', this.onKeypress);
 	},

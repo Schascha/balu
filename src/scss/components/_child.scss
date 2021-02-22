@@ -3,27 +3,14 @@
 		font-size: 3rem;
 		font-weight: 400;
 
-		&::after {
-			font-size: 0.5em;
-			vertical-align: middle;
-		}
-
-		&.both::after {
-			content: '⚥';
-		}
-
-		&.boy::after {
-			content: '♂';
-		}
-
-		&.girl::after {
-			content: '♀';
-		}
-
 		@each $name in ('boy', 'girl') {
 			&.#{$name} {
 				color: var(--color-#{$name}-dark);
 			}
+		}
+
+		svg {
+			fill: currentColor;
 		}
 	}
 

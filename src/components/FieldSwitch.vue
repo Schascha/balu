@@ -40,13 +40,20 @@
 		>
 
 		<!-- Toggle -->
-		<div class="toggle" />
+		<div class="toggle">
+			<IconGender />
+		</div>
 	</div>
 </template>
 
 <script>
+import IconGender from '@/assets/icons/gender.svg?inline';
+
 export default {
-	data () {
+	components: {
+		IconGender
+	},
+	data() {
 		return {
 			toggle: 1
 		};

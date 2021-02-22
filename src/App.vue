@@ -2,20 +2,20 @@
 	<div class="frame">
 		<header>
 			<h1>
-				{{ $t('title') }}
-			</h1>
-
-			<!-- <nav>
 				<router-link to="/">
-					Home
+					{{ $t('title') }}
 				</router-link>
-				<router-link to="/about">
-					About
+			</h1>
+			<nav>
+				<router-link :to="{name: 'Likes'}">
+					{{ $t('router.likes') }}
 				</router-link>
-			</nav> -->
+			</nav>
 		</header>
 
-		<router-view />
+		<main>
+			<router-view />
+		</main>
 
 		<footer>
 			<div>
@@ -42,6 +42,10 @@
 		components: {
 			IconGitHub,
 			Language
+		},
+		created() {
+			this.$store.dispatch('getAllNames');
+			this.$store.dispatch('getLikes');
 		}
 	};
 </script>

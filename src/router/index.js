@@ -11,11 +11,11 @@ const
 			name: 'Home',
 			component: Home
 		},
-		// {
-		// 	path: '/about',
-		// 	name: 'About',
-		// 	component: () => import(/* webpackChunkName: "about" */ '../views/About')
-		// },
+		{
+			path: '/likes',
+			name: 'Likes',
+			component: () => import(/* webpackChunkName: "about" */ '../views/Likes')
+		},
 		{
 			path: '/name/:name',
 			name: 'Child',

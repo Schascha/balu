@@ -15,5 +15,8 @@
       "title": "View on GitHub"
     }
   },
+  "router": {
+    "likes": "Wish list"
+  },
   "title": "Balu"
 }

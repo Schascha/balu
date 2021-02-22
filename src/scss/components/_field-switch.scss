@@ -18,12 +18,12 @@
 		left: 50%;
 		width: $field-switch-size;
 		height: $field-switch-size;
-		background: var(--color-brand);
 		border-radius: 50%;
 		color: var(--color-base);
 
-		&::before {
-			content: '⚥';
+		.boy,
+		.girl {
+			display: none;
 		}
 	}
 
@@ -31,11 +31,21 @@
 		~ .toggle {
 			transform: translate(($field-switch-height - $field-switch-size) / 2, -50%);
 			left: 0;
-			// background-color: var(--color-boy);
-			// color: var(--color-boy-dark);
 
-			&::before {
-				content: '♂';
+			svg {
+				transform: rotate(-360deg);
+			}
+
+			// .soother {
+			// 	fill: var(--color-boy-dark);
+			// }
+
+			.boy {
+				display: block;
+			}
+
+			.both {
+				display: none;
 			}
 		}
 	}
@@ -44,11 +54,21 @@
 		~ .toggle {
 			transform: translate(-$field-switch-height + (($field-switch-height - $field-switch-size) / 2), -50%);
 			left: 100%;
-			// background-color: var(--color-girl);
-			// color: var(--color-girl-dark);
 
-			&::before {
-				content: '♀';
+			svg {
+				transform: rotate(360deg);
+			}
+
+			// .soother {
+			// 	fill: var(--color-girl-dark);
+			// }
+
+			.girl {
+				display: block;
+			}
+
+			.both {
+				display: none;
 			}
 		}
 	}
@@ -66,5 +86,10 @@
 		left: 0;
 		margin: 0;
 		padding: 0;
+	}
+
+	svg {
+		transition: transform 0.3s ease-out;
+		fill: var(--color-brand);
 	}
 }
