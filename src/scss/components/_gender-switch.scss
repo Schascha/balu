@@ -1,13 +1,13 @@
-.field-switch {
+.gender-switch {
 	display: inline-flex;
 	position: relative;
 	margin: 1rem auto;
-	width: $field-switch-width;
-	height: $field-switch-height;
+	width: $gender-switch-width;
+	height: $gender-switch-height;
 	border: 2px solid var(--color-brand);
-	border-radius: $field-switch-height;
+	border-radius: $gender-switch-height;
 
-	.toggle {
+	&-toggle {
 		transition: all 0.3s ease-out;
 		display: inline-flex;
 		align-items: center;
@@ -16,8 +16,8 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		width: $field-switch-size;
-		height: $field-switch-size;
+		width: $gender-switch-size;
+		height: $gender-switch-size;
 		border-radius: 50%;
 		color: var(--color-base);
 
@@ -27,9 +27,9 @@
 		}
 	}
 
-	.start:checked {
-		~ .toggle {
-			transform: translate(($field-switch-height - $field-switch-size) / 2, -50%);
+	&-start:checked {
+		~ .gender-switch-toggle {
+			transform: translate(($gender-switch-height - $gender-switch-size) / 2, -50%);
 			left: 0;
 
 			svg {
@@ -50,9 +50,9 @@
 		}
 	}
 
-	.end:checked {
-		~ .toggle {
-			transform: translate(-$field-switch-height + (($field-switch-height - $field-switch-size) / 2), -50%);
+	&-end:checked {
+		~ .gender-switch-toggle {
+			transform: translate(-$gender-switch-height + (($gender-switch-height - $gender-switch-size) / 2), -50%);
 			left: 100%;
 
 			svg {

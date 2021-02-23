@@ -18,7 +18,7 @@
 		/>
 		<br>
 
-		<FieldSwitch v-model="toggle" />
+		<GenderSwitch v-model="toggle" />
 		<br>
 
 		<button
@@ -31,14 +31,14 @@
 </template>
 
 <script>
-import FieldSwitch from '@/components/FieldSwitch';
+import GenderSwitch from '@/components/GenderSwitch';
 import Heart from '@/components/Heart';
 import IconBoy from '@/assets/icons/boy.svg?inline';
 import IconGirl from '@/assets/icons/girl.svg?inline';
 
 export default {
 	components: {
-		FieldSwitch,
+		GenderSwitch,
 		Heart,
 		IconBoy,
 		IconGirl,

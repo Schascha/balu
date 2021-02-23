@@ -1,5 +1,5 @@
 <template>
-	<div class="field-switch">
+	<div class="gender-switch">
 		<!-- Start -->
 		<label
 			for="start"
@@ -9,7 +9,7 @@
 			id="start"
 			type="radio"
 			name="choice_radio"
-			class="start"
+			class="gender-switch-start"
 			:checked="(toggle === 0) && 'checked'"
 		>
 
@@ -22,7 +22,7 @@
 			id="center"
 			type="radio"
 			name="choice_radio"
-			class="center"
+			class="gender-switch-center"
 			:checked="(toggle === 1) && 'checked'"
 		>
 
@@ -35,12 +35,12 @@
 			id="end"
 			type="radio"
 			name="choice_radio"
-			class="end"
+			class="gender-switch-end"
 			:checked="(toggle === 2) && 'checked'"
 		>
 
 		<!-- Toggle -->
-		<div class="toggle">
+		<div class="gender-switch-toggle">
 			<IconGender />
 		</div>
 	</div>
@@ -67,5 +67,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	@import '@/scss/components/field-switch';
+	@import '@/scss/components/gender-switch';
 </style>
