@@ -1,10 +1,21 @@
 .likes {
+	margin: 0 auto;
+	max-width: 25rem;
 	font-size: rem(18);
-	text-align: left;
-}
 
-.is-long {
-	ul {
-		columns: 2;
+	&-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: left;
+	}
+
+	&-item {
+		margin: 0;
+		padding: 1rem 0;
+
+		&:not(:first-child) {
+			border-top: 1px solid var(--color-border);
+		}
 	}
 }

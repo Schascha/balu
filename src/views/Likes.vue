@@ -1,18 +1,14 @@
 <template>
-	<div :class="['likes', {'is-long': likes.length >= 8}]">
-		<ul v-if="likes && likes.length">
-			<li
-				v-for="like in likes"
-				:key="like"
-			>
-				{{ like }}
-			</li>
-		</ul>
-	</div>
+	<Likes :likes="likes" />
 </template>
 
 <script>
+import Likes from '@/components/Likes';
+
 export default {
+	components: {
+		Likes
+	},
 	computed: {
 		likes() {
 			return this.$store.state.likes;
@@ -20,7 +16,3 @@ export default {
 	}
 };
 </script>
-
-<style lang="scss" scoped>
-	@import '@/scss/components/likes';
-</style>

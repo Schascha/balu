@@ -9,6 +9,9 @@
       "label": "Language"
     }
   },
+  "likes": {
+    "empty": "Add names to your wish list."
+  },
   "link": {
     "github": {
       "href": "https://github.com/Schascha/balu",

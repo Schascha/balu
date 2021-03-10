@@ -9,6 +9,9 @@
       "label": "Sprache"
     }
   },
+  "likes": {
+    "empty": "Füge Namen Deinem Merkzettel hinzu."
+  },
   "link": {
     "github": {
       "href": "https://github.com/Schascha/balu",
