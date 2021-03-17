@@ -11,11 +11,24 @@
 	}
 
 	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		margin: 0;
 		padding: 1rem 0;
 
 		&:not(:first-child) {
 			border-top: 1px solid var(--color-border);
 		}
+
+		&:hover button {
+			opacity: 1;
+		}
+	}
+
+	button {
+		transition: opacity 0.3s ease-out;
+		user-select: none;
+		opacity: 0;
 	}
 }

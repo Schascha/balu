@@ -10,21 +10,39 @@
 				class="likes-item"
 			>
 				{{ like }}
+
+				<Heart
+					:active="true"
+					class="is-small"
+					@click="onLike(like)"
+				/>
 			</li>
 		</ul>
 		<p v-else>
-			{{ $t('likes.empty') }}
+			<router-link to="/">
+				{{ $t('likes.empty') }}
+			</router-link>
 		</p>
 	</div>
 </template>
 
 <script>
+import Heart from '@/components/Heart';
+
 export default {
+	components: {
+		Heart,
+	},
 	props: {
 		likes: {
 			type: Array,
 			default: () => []
 		}
+	},
+	methods: {
+		onLike(e) {
+			this.$store.dispatch('like', e);
+		},
 	}
 };
 </script>

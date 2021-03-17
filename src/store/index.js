@@ -43,10 +43,10 @@ export default new Vuex.Store({
 			state.memoryIndex = state.memory.length - 1;
 			state.child = child;
 		},
-		setLike(state) {
+		setLike(state, data) {
 			const
 				{child, likes} = state,
-				index = likes.indexOf(child.name)
+				index = likes.indexOf(data || child.name)
 			;
 
 			if (index > -1) {
@@ -96,8 +96,8 @@ export default new Vuex.Store({
 		getLikes({commit}) {
 			commit('setLikes');
 		},
-		like({commit}) {
-			commit('setLike');
+		like({commit}, data) {
+			commit('setLike', data);
 		}
 	}
 });

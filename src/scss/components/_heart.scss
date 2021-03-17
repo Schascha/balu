@@ -1,6 +1,6 @@
 .heart {
 	@include button-reset();
-	padding: 0;
+	padding: $heart-size / 2;
 	border-radius: 0;
 
 	i {
@@ -22,11 +22,11 @@
 		}
 
 		&::before {
-			left: -$heart-size / 2;
+			left: -50%;
 		}
 
 		&::after {
-			top: -$heart-size / 2;
+			top: -50%;
 			left: 0;
 		}
 	}
@@ -40,6 +40,16 @@
 
 		i {
 			background-color: var(--color-heart);
+		}
+	}
+
+	&.is-small {
+		animation: none;
+		padding: $heart-size / 4;
+
+		i {
+			width: $heart-size / 2;
+			height: $heart-size / 2;
 		}
 	}
 }
