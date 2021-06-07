@@ -1,8 +1,8 @@
-<img src="src/assets/logo.svg/?raw=true" alt="Logo" width="150">
+<img src="src/assets/logo-symbol.svg/?raw=true" alt="Logo" width="150">
 
 # Balu
 
-![Build](https://github.com/Schascha/balu/workflows/Build/badge.svg)
+[![Build](https://github.com/Schascha/balu/workflows/Build/badge.svg)](https://github.com/Schascha/balu/actions)
 
 > Just a baby name inspiration tool
 
