@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/balu/precache-manifest.cfb570e64b01dd213848398ad709b628.js"
+  "/balu/precache-manifest.a14fcf54694e2581b42c5238ab4cf145.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "balu"});
