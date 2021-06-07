@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eccd1fa85e32b65dc46a",
+    "revision": "55c6ce276f8e6fbc7fec",
     "url": "/balu/css/about.3a922975.css"
   },
   {
-    "revision": "0b0aa36bf2bbf3124780",
+    "revision": "297ad129679794754e0e",
     "url": "/balu/css/app.94c47376.css"
   },
   {
@@ -76,16 +76,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/balu/img/sharing.png"
   },
   {
-    "revision": "cd666c3bf8fdb3bffba994429f36aed3",
+    "revision": "ce6ab007b9aed9981ac35359aadb68e6",
     "url": "/balu/index.html"
   },
   {
-    "revision": "eccd1fa85e32b65dc46a",
-    "url": "/balu/js/about.d8d4c95a.js"
+    "revision": "55c6ce276f8e6fbc7fec",
+    "url": "/balu/js/about.f1db5fa9.js"
   },
   {
-    "revision": "0b0aa36bf2bbf3124780",
-    "url": "/balu/js/app.4466331e.js"
+    "revision": "297ad129679794754e0e",
+    "url": "/balu/js/app.dae43569.js"
   },
   {
     "revision": "56133a8d644e19863ebb",
