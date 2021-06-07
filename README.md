@@ -1,4 +1,4 @@
-<img src="src/assets/logo-symbol.svg/?raw=true" alt="Logo" width="150">
+<img src="src/assets/logo.svg/?raw=true" alt="Logo" width="150">
 
 # Balu
 
