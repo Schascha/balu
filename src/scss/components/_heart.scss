@@ -1,6 +1,6 @@
 .heart {
 	@include button-reset();
-	padding: $heart-size / 2;
+	padding: $heart-size * 0.5;
 	border-radius: 0;
 
 	i {
@@ -45,11 +45,11 @@
 
 	&.is-small {
 		animation: none;
-		padding: $heart-size / 4;
+		padding: $heart-size * 0.25;
 
 		i {
-			width: $heart-size / 2;
-			height: $heart-size / 2;
+			width: $heart-size * 0.5;
+			height: $heart-size * 0.5;
 		}
 	}
 }

@@ -29,7 +29,7 @@
 
 	&-start:checked {
 		~ .gender-switch-toggle {
-			transform: translate(($gender-switch-height - $gender-switch-size) / 2, -50%);
+			transform: translate(($gender-switch-height - $gender-switch-size) * 0.5, -50%);
 			left: 0;
 
 			svg {
@@ -52,7 +52,7 @@
 
 	&-end:checked {
 		~ .gender-switch-toggle {
-			transform: translate(-$gender-switch-height + (($gender-switch-height - $gender-switch-size) / 2), -50%);
+			transform: translate(-$gender-switch-height + (($gender-switch-height - $gender-switch-size) * 0.5), -50%);
 			left: 100%;
 
 			svg {

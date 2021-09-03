@@ -1,6 +1,17 @@
 {
   "name": "balu",
   "version": "0.0.1",
+  "author": "Sascha Künstler <contact.schascha@gmail.com> (https://www.schaschaweb.de)",
+  "license": "MIT",
+  "funding": "https://www.paypal.me/LosZahlos",
+  "homepage": "https://schascha.github.io/balu/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Schascha/balu"
+  },
+  "bugs": {
+    "url": "https://github.com/Schascha/balu/issues"
+  },
   "scripts": {
     "start": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
