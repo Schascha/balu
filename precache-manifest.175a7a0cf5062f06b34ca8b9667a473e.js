@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a997c839bb52faaef286",
+    "revision": "b7e4f6d4024e2c276c5e",
     "url": "/balu/css/about.3a922975.css"
   },
   {
-    "revision": "85c01e38eb3ef2a180f0",
+    "revision": "1d738b5ef2a66c3b909b",
     "url": "/balu/css/app.94c47376.css"
   },
   {
@@ -76,20 +76,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/balu/img/sharing.png"
   },
   {
-    "revision": "da3086f68cba22dc8d01ec3682905ca7",
+    "revision": "79c2b504cd4a13f7266120d082bb7357",
     "url": "/balu/index.html"
   },
   {
-    "revision": "a997c839bb52faaef286",
-    "url": "/balu/js/about.cc9fe642.js"
+    "revision": "b7e4f6d4024e2c276c5e",
+    "url": "/balu/js/about.1e53c924.js"
   },
   {
-    "revision": "85c01e38eb3ef2a180f0",
-    "url": "/balu/js/app.32b38165.js"
+    "revision": "1d738b5ef2a66c3b909b",
+    "url": "/balu/js/app.05d58427.js"
   },
   {
-    "revision": "ee1b997dd7bbd4d0d6ab",
-    "url": "/balu/js/chunk-vendors.fbbe9605.js"
+    "revision": "46b888de7cf098d35d2c",
+    "url": "/balu/js/chunk-vendors.d57e1885.js"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
